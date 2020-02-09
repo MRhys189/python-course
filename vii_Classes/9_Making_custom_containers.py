@@ -15,7 +15,7 @@ class TagCloud:
     def __len__(self):
         return len(self.tags)
 
-    def __iter__(self):
+    def __iter__(self): #to make the __len__() iterable
         return iter(self.tags)
 
 
