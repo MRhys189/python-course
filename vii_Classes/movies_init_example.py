@@ -16,3 +16,4 @@ toy_story = Movie("Toy Story", "About a boy and his love for his toys",
                   "Image", "www.youtube.com/toy_story_trailer")
 
 print(toy_story.name())
+print(toy_story.title)
