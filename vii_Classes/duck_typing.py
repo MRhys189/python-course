@@ -16,7 +16,7 @@ class Person:
 
 
 def quack_and_fly(thing):
-    # LEAFP Example(Pythonic)
+    # EAFP Example(Pythonic)
     try:
         thing.quack()
         thing.fly()
