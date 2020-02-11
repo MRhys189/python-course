@@ -16,12 +16,14 @@ class Person:
 
 
 def quack_and_fly(thing):
-    # Not duck-typed(Non-pythonic)
-    if isinstance(thing, Duck):
-        thing.quack()
-        thing.fly()
-    else:
-        print("This has to be a Duck!")
+    #LBYL
+    if hasattr(thing,"quack"):
+        if callable(thing.quack):
+            thing.quack()
+    
+    if hasattr(thing,"fly"):
+        if callable(thing.fly):
+            thing.fly()
 
     print()
 
