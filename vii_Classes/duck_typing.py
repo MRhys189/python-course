@@ -1,34 +1,14 @@
-class Duck:
-    def quack(self):
-        print("Quack,quack")
+person = {"name": "Jess", "age": 23, "job": "Programmer"}
+person = {"name": "Jess", "age": 23}
 
-    def fly(self):
-        print("Flap, flap")
+# Look before you leap(LBYL) (Non-pythonic)
+if "name" in person and "age" in person an "job" in person:
+    print("I'm {name}. I'm {age} years old and I am a {job}".format(**person))
+else:
+    print("Missing some keys")
 
-
-class Person:
-
-    def quack(self):
-        print("I'm quacking like a duck!")
-
-    def fly(self):
-        print("I'm flapping my arms!")
-
-
-def quack_and_fly(thing):
-    # EAFP Example(Pythonic)
-    try:
-        thing.quack()
-        thing.fly()
-        thing.bark()
-    except AttributeError as e:
-        print(e)
-
-    print()
-
-
-d = Duck()
-quack_and_fly(d)
-
-p = Person()
-quack_and_fly(p)
+# #EAFP (Pythonic)
+# try:
+#     print("I'm {name}. I'm {age} years old and I am a {job}".format(**person))
+# except KeyError as e:
+#     print("Missing {} key".format(e))
