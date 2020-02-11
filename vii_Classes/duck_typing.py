@@ -16,14 +16,13 @@ class Person:
 
 
 def quack_and_fly(thing):
-    #LBYL example(Non-pythonic)
-    if hasattr(thing,"quack"):
-        if callable(thing.quack):
-            thing.quack()
-    
-    if hasattr(thing,"fly"):
-        if callable(thing.fly):
-            thing.fly()
+    # LEAFP Example(Pythonic)
+    try:
+        thing.quack()
+        thing.fly()
+        thing.bark()
+    except AttributeError as e:
+        print(e)
 
     print()
 
