@@ -1,6 +1,3 @@
-from sales import calc_shipping, calc_tax
-import sales
+import ecommerce.sales
 
-sales.calc_shipping()
-
-calc_shipping()
+ecommerce.sales.calc_tax()
