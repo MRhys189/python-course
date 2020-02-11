@@ -16,7 +16,7 @@ class Person:
 
 
 def quack_and_fly(thing):
-    #LBYL example
+    #LBYL example(Non-pythonic)
     if hasattr(thing,"quack"):
         if callable(thing.quack):
             thing.quack()
