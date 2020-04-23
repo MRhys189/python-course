@@ -1,5 +1,6 @@
 def greet(name):
     print(f"Hi {name}")
+#this can't be reused
 
 
 # 1- Perform a task e.g greet(),print()
