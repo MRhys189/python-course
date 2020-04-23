@@ -8,7 +8,7 @@ def greet(name):
 
 def get_greeting(name):  # this is better than the first part
     return f"Hi {name}"
-
+#returns a value which can be assigned to a variable
 
 message = get_greeting("Mosh")
 print(message)
