@@ -1,6 +1,6 @@
 def greet(name):
     print(f"Hi {name}")
-#this can't be reused
+# this can't be reused
 
 
 # 1- Perform a task e.g greet(),print()
@@ -8,7 +8,8 @@ def greet(name):
 
 def get_greeting(name):  # this is better than the first part
     return f"Hi {name}"
-#returns a value which can be assigned to a variable
+# returns a value which can be assigned to a variable
+
 
 message = get_greeting("Mosh")
 print(message)
