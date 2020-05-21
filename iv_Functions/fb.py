@@ -1,10 +1,12 @@
 def missing_char(str, n):
     list_name = [*str]
+    new_list_name = ''
     print(list_name)
     for letter in list_name:
-        list_name[n]=letter
+        list_name[n] = letter
+        letter = ''
 
-    return list_name[0:]
+    return new_list_name.join(list_name)
 
 
 print(missing_char('floor', 0))

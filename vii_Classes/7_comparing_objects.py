@@ -8,6 +8,7 @@ class Point:
 
     def __gt__(self, other):
         return self.x > other.x and self.y > other.y
+    
 
     def draw(self):
         print(f"Point ({self.x},{self.y})")
@@ -16,3 +17,5 @@ class Point:
 point = Point(1, 2)
 other = Point(1, 2)
 print(point > other)
+
+
